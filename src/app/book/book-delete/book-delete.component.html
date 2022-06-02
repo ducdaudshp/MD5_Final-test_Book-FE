@@ -1,0 +1,20 @@
+<h1>Delete Book</h1>
+<a routerLink="/">Book List</a>
+<br><br>
+<form [formGroup]="bookForm" (ngSubmit)="delete()" >
+  <div>
+    <label for="title">Ten sach</label>
+    <input disabled type="text" id="title" formControlName="title">
+  </div>
+  <div>
+    <label for="author">Tac gia</label>
+    <input disabled type="text" id="author" formControlName="author">
+  </div>
+  <div>
+    <label for="description">Mo ta</label>
+    <input disabled type="text" id="description" formControlName="description">
+  </div>
+  <div>
+    <button>Delete</button>
+  </div>
+</form>

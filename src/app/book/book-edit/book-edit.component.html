@@ -1,0 +1,19 @@
+<h1>Edit Book</h1>
+<a routerLink="/">Book List</a>
+<form (ngSubmit)="update()" [formGroup]="bookForm">
+  <div>
+    <label for="title">Ten sach</label>
+    <input type="text" id="title" formControlName="title">
+  </div>
+  <div>
+    <label for="author">Tac gia</label>
+    <input type="text" id="author" formControlName="author">
+  </div>
+  <div>
+    <label for="description">Mo ta</label>
+    <input type="text" id="description" formControlName="description">
+  </div>
+  <div>
+    <button>Update</button>
+  </div>
+</form>
